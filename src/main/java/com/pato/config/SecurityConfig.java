@@ -32,30 +32,7 @@ import java.util.List;
 public class SecurityConfig {
 
     private final JwtUtils jwtUtils;
-
-    @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
-
-        CorsConfiguration config = new CorsConfiguration();
-
-        config.setAllowedOrigins(List.of(
-                "http://127.0.0.1:5500",
-                "http://localhost:5500",
-                "https://gestion-barberia.netlify.app",  // tu frontend
-                "https://permanent-rivkah-patopettini-17111cf7.koyeb.app" // tu backend en Koyeb
-        ));
-
-        config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-        config.setAllowedHeaders(List.of("*"));
-        config.setExposedHeaders(List.of("*"));
-        config.setAllowCredentials(false);
-
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", config);
-
-        return source;
-    }
-
+    
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
