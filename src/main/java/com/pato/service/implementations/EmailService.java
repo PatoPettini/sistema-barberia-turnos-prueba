@@ -78,7 +78,7 @@ public class EmailService {
             html = html.replace("${barbero}", barbero);
             html = html.replace(
                     "__LINK_CANCELAR__",
-                    "http://127.0.0.1:5500/frontend/public/cancelar-turno.html?id=" + idTurno
+                    "https://gestion-barberia.netlify.app/public/cancelar-turno.html?id=" + idTurno
             );
 
             return html;
