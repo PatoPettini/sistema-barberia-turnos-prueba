@@ -21,7 +21,7 @@ public class CorsGlobalConfig {
                 "http://localhost:5500",
 
                 // 🔥 tu frontend Netlify
-                "https://https://gestion-barberia.netlify.app",
+                "https://gestion-barberia.netlify.app",
 
                 // 🔥 tu backend en Koyeb (para que funcione preflight)
                 "https://permanent-rivkah-patopettini-17111cf7.koyeb.app"
