@@ -43,7 +43,7 @@ public class TurnoReminderScheduler {
             String barberoNombre  = turno.getBarbero().getNombre() + " " +
                     turno.getBarbero().getApellido();
 
-            String linkCancelar = "https://gestion-barberia.netlify.app/cancelar-turno.html?id=" + turno.getIdTurno();
+            String linkCancelar = "https://gestion-barberia.netlify.app/public/cancelar-turno.html?id=" + turno.getIdTurno();
 
 
             String html = emailService.cargarRecordatorioTurno(

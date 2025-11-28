@@ -32,7 +32,7 @@ import java.util.List;
 public class SecurityConfig {
 
     private final JwtUtils jwtUtils;
-    
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
